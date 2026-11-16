@@ -1,8 +1,40 @@
 site_name: Mayur Sanjay Sawant
+site_description: Mayur Sawant's research in robotic navigation, feedback control, and constrained stabilization
+site_url: https://mayurssawant.github.io/
+markdown_extensions:
+  - attr_list
 theme:
   name: material
-
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.top
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/robot-outline
+  language: en
 nav:
   - Home: index.md
-  - Projects: projects.md
+  - Research: projects.md
   - Publications: publications.md
+  - CV: files/Mayur_Sawant_CV.pdf
+  - Thesis: files/Mayur_Sawant_PhD_Thesis.pdf
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.ca/citations?user=w9_rwx0AAAAJ&hl=en&oi=ao
+      name: Google Scholar
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0003-2932-7771
+      name: ORCID
+    - icon: fontawesome/solid/envelope
+      link: mailto:mayurssawant1@gmail.com
+      name: Email
+copyright: © 2026 Mayur Sanjay Sawant

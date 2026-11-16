@@ -1,0 +1,221 @@
+% Two-page academic CV template (postdoc/researcher)
+% Compile with pdfLaTeX.
+\documentclass[10pt]{article}
+
+% Page layout
+\usepackage[margin=0.70in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+% Fonts and typography
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Colors and links
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue,
+  citecolor=MidnightBlue
+}
+
+% Section styling
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% Lists
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt}
+\setlist[enumerate]{leftmargin=*, itemsep=0pt, topsep=1pt}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+% Date column width (increase slightly to keep ranges on one line)
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{3.0cm}}
+
+% Simple CV helpers
+\newcommand{\CVName}[1]{{\huge\bfseries #1}}
+\newcommand{\CVLine}[1]{{\small #1}}
+\newcommand{\CVSection}[1]{\section*{#1}\vspace{-2pt}}
+\newcommand{\Entry}[3]{% role/title, place, dates
+  \begin{tabularx}{\textwidth}{@{}L r@{}}
+    \textbf{#1} & \textit{\mbox{#3}}\\[-2pt]
+    \parbox[t]{\linewidth}{\setlength{\parskip}{0pt}#2} &
+  \end{tabularx}\par
+}
+
+% Sub-entry (e.g., courses under a teaching role)
+% Use a natural-width right-aligned date column so all dates flush to the right margin.
+\newcommand{\SubEntry}[2]{% title, dates
+  \begin{tabularx}{\textwidth}{@{}L r@{}}
+    #1 & \textit{\mbox{#2}}\\
+  \end{tabularx}\par
+}
+
+\newcommand{\EntryItem}[1]{\begin{itemize}\item #1\end{itemize}}
+\newcommand{\DOI}[1]{\href{https://doi.org/#1}{doi:#1}}
+
+\begin{document}
+
+% =====================
+% Header
+% =====================
+\CVName{Mayur Sanjay Sawant}\\[2pt]
+\CVLine{Postdoctoral Researcher, Department of Electrical and Computer Engineering, Lakehead University}\\
+\CVLine{Thunder Bay, Ontario, Canada \quad|\quad \href{mailto:mayurssawant1@gmail.com}{mayurssawant1@gmail.com}}\\
+ \CVLine{
+%Website: \href{https://mayurssawant.github.io}{mayurssawant.github.io} \quad|\quad
+Google Scholar: \href{https://scholar.google.ca/citations?user=w9_rwx0AAAAJ&hl=en&oi=ao}{link} \quad|\quad ORCID: \href{https://orcid.org/0000-0003-2932-7771}{0000-0003-2932-7771}}
+
+\vspace{6pt}
+
+% =====================
+% Optional one-liner / research summary
+% =====================
+% \textbf{Research summary:} 1--2 sentences describing your research focus, methods, and impact (e.g., ``I develop statistical learning methods for X with applications to Y.'').
+
+% =====================
+% Research Interests
+% =====================
+\CVSection{Research Interests}
+\begin{itemize}
+  \item Autonomous navigation; Robotic systems; Hybrid systems; Motion on manifolds.
+\end{itemize}
+
+% =====================
+% Appointments
+% =====================
+\CVSection{Academic Appointments}
+\Entry{Postdoctoral Researcher}{Lakehead University, Department of Electrical and Computer Engineering (Advisor: Prof.~A. Tayebi)}{2024--Present}
+	\Entry{Contract Lecturer --- EMTR 2017 --- Robotics and Automation I}{Lakehead University, Department of Mechanical and Mechatronics Engineering}{Fall~2026}
+% \EntryItem{Advanced hybrid-feedback navigation and obstacle-avoidance methods (convex/nonconvex and $N$-D settings), culminating in two journal papers (under review) and two conference papers (CDC 2025, accepted).}
+% \EntryItem{Developed constrained stabilization results on the $n$-sphere under conic/star-shaped constraints and extended motion-planning ideas to second-order robot dynamics, strengthening the theory-to-robotics pipeline.}
+
+% \Entry{Research Assistant / Visiting Researcher (optional)}{Institution, Group/Lab}{2022--2024}
+% \EntryItem{Short bullet on responsibility/achievement.}
+
+% =====================
+% Education
+% =====================
+\CVSection{Education}
+\Entry{Ph.D. in Electrical and Computer Engineering (Robotics and Control)}{Western University, London, Ontario, Canada.\\[-1pt]
+{\small Thesis: \textit{Hybrid Feedback Control for Autonomous Robot Navigation with Obstacle Avoidance}}}{2020--2024}
+\vspace{4pt}
+\Entry{M.Tech. in Control Systems}{Veermata Jijabai Technological Institute, Mumbai, Maharashtra, India.\\[-1pt]
+{\small Thesis: \textit{Distributed Control for Complex Systems Engineering}}}{2017--2019}
+\vspace{4pt}
+\Entry{B.E. in Electronics and Telecommunication Engineering}{Rajiv Gandhi Institute of Technology, Mumbai, Maharashtra, India.}{2013--2017}
+
+% =====================
+% Publications
+% =====================
+\CVSection{Publications}
+% Put status at the very end, e.g., "(accepted)" or "(under review at IEEE TAC)".
+
+\textbf{Journal articles}
+\begin{enumerate}
+  \item \textbf{M. Sawant} and A. Tayebi, ``Constrained Stabilization on the $n$-Sphere with Conic and Star-shaped Constraints,'' \textit{IEEE Transactions on Automatic Control}, 2026. \href{https://arxiv.org/abs/2509.02487}{arXiv:2509.02487}.
+  \item \textbf{M. Sawant} and A. Tayebi, ``From Kinematic Motion Planners to Dynamic Autonomous Navigation with Obstacle Avoidance,'' submitted to \textit{Automatica}. \href{https://arxiv.org/abs/2503.17589}{arXiv:2503.17589}. \item \textbf{M. Sawant} and A. Tayebi, ``Dynamic Stabilization on the $n$-sphere with Star-shaped Constraints,'' submitted to \textit{Automatica}. \href{https://arxiv.org/abs/2603.27382v3}{arXiv:2603.27382v3}.
+  \item \textbf{M. Sawant} and A. Tayebi, ``$N$-dimensional Convex Obstacle Avoidance using Hybrid Feedback Control,'' \textit{IEEE Transactions on Automatic Control}, 2026. \href{https://arxiv.org/abs/2403.11279}{arXiv:2403.11279}.
+  \item \textbf{M. Sawant}, I. Polushin, and A. Tayebi, ``Hybrid Feedback Control Design for Nonconvex Obstacle Avoidance,'' \textit{IEEE Transactions on Automatic Control}, vol.~69, no.~11, pp.~7508--7523, Nov.~2024. \DOI{10.1109/TAC.2024.3388952}.
+  \item \textbf{M. Sawant}, S. Berkane, I. Polushin, and A. Tayebi, ``Hybrid Feedback for Autonomous Navigation in Planar Environments With Convex Obstacles,'' \textit{IEEE Transactions on Automatic Control}, vol.~68, no.~12, pp.~7342--7357, Dec.~2023. \DOI{10.1109/TAC.2023.3277884}.
+\end{enumerate}
+
+\textbf{Conference proceedings}
+\begin{enumerate}
+  \item \textbf{M. Sawant} and A. Tayebi, ``Dynamic Constrained Stabilization on the $n$-sphere,'' \textit{IEEE 65th Conference on Decision and Control (CDC)}, Honolulu, Hawaii, USA, 2026. \href{https://arxiv.org/abs/2603.27382v1}{arXiv:2603.27382v1}.
+  \item \textbf{M. Sawant} and A. Tayebi, ``Adapting First-order Motion Planners to Second-order Dynamical Systems,'' \textit{IEEE 64th Conference on Decision and Control (CDC)}, Rio de Janeiro, Brazil, 2025, pp.~7407--7412.
+  \item \textbf{M. Sawant} and A. Tayebi, ``Stabilization on the 2-Sphere under Geodesically Convex Constraints,'' \textit{IEEE 64th Conference on Decision and Control (CDC)}, Rio de Janeiro, Brazil, 2025, pp.~7401--7406.
+  \item \textbf{M. Sawant}, I. Polushin, and A. Tayebi, ``Hybrid Feedback for Three-dimensional Convex Obstacle Avoidance,'' \textit{American Control Conference (ACC)}, Denver, CO, USA, 2025, pp.~4665--4670. \\\DOI{10.23919/ACC63710.2025.11107930}.
+  \item \textbf{M. Sawant}, A. Tayebi, and I. Polushin, ``Autonomous Navigation in Environments with Arbitrary Non-convex Obstacles,'' \textit{IEEE 61st Conference on Decision and Control (CDC)}, Cancun, Mexico, 2022, pp.~7208--7213. \DOI{10.1109/CDC51059.2022.9993279}.
+  \item \textbf{M. Sawant}, J. Moyalan, S. Sutavani, K. Sonam, R. Pasumarthy, and S. Wagh, ``Design of Robust Gradient Method for Convex Optimization Problem using Biased Integral Quadratic Constraints,'' \textit{European Control Conference (ECC)}, St. Petersburg, Russia, 2020, pp.~368--373. \DOI{10.23919/ECC51009.2020.9143654}.
+  \item \textbf{M. Sawant}, J. Moyalan, J. Koonamparampath, A. Sheikh, S. Wagh, and N. Singh, ``Building Temperature Control: A Distributed Escort Dynamical approach,'' \textit{9th International Conference on Power and Energy Systems (ICPES)}, Perth, WA, Australia, 2019, pp.~1--6. \DOI{10.1109/ICPES47639.2019.9105423}.
+  %\item \textbf{M. Sawant}, J. Moyalan, U. Bhagyashree, A. Sheikh, S. Wagh, and N. Singh, ``Power Grid Load Management using Electric Vehicles: A Distributed Resource Allocation Approach,'' \textit{27th Mediterranean Conference on Control and Automation (MED)}, Akko, Israel, 2019, pp.~428--433. \DOI{10.1109/MED.2019.8798537}.
+  \item J. Koonamparampath, \textbf{M. Sawant}, K. Atharva, and A. Sheikh, ``A Stackelberg Game Theoretic Approach for Optimal Electricity Pricing Dynamics employing Time-of-Use Algorithm,'' \textit{6th International Conference on Control, Decision and Information Technologies (CoDIT)}, Paris, France, 2019, pp.~1628--1633. \DOI{10.1109/CoDIT.2019.8820354}.
+  %\item U. Suryawanshi, \textbf{M. Sawant}, J. Moyalan, A. Sheikh, and S. Bhil, ``Unit Commitment: An Escort Dynamics Approach,'' \textit{6th International Conference on Control, Decision and Information Technologies (CoDIT)}, Paris, France, 2019, pp.~1953--1958. \DOI{10.1109/CoDIT.2019.8820592}.
+\end{enumerate}
+
+\textit{Full list:} \href{https://mayurssawant.github.io/publications/}{mayurssawant.github.io/publications/}
+
+% =====================
+% Grants, Fellowships, Awards
+% =====================
+\CVSection{Grants \& Fellowships}
+\begin{itemize}
+  \item AICTE PG Scholarship (INR 12{,}000/month), All India Council for Technical Education (AICTE), Aug.~2017--Jul.~2019.
+\end{itemize}
+
+\CVSection{Honors \& Awards}
+\begin{itemize}
+  \item Graduate Student Award for Excellence in Research, Department of Electrical and Computer Engineering, Western University, 2022.
+  \item First Rank Holder, M.Tech. (Control Systems), Veermata Jijabai Technological Institute (VJTI), University of Mumbai, 2019.
+\end{itemize}
+
+% =====================
+% Teaching and Mentoring
+% =====================
+\CVSection{Teaching Experience}
+\Entry{Teaching Assistant}{Western University}{Winter~2020--Winter~2024}
+\vspace{2pt}
+\SubEntry{ECE3399 --- Principles and Practices of Design of Electronic Systems}{Winter~2020, 2021, 2022}
+\vspace{2pt}
+\SubEntry{MSE4401 --- Robotic Manipulators}{Fall~2020, 2021, 2022, 2023}
+\vspace{2pt}
+\SubEntry{ECE4469 --- Applied Control Systems}{Winter~2023}
+\vspace{2pt}
+\SubEntry{ECE2242 --- Principles of Design}{Winter~2024}
+
+
+% \CVSection{Mentoring}
+% \begin{itemize}
+%   \item Mentored Student Name (level: UG/MSc/PhD) on Project Topic, Year. Outcome: poster/paper/software.
+% \end{itemize}
+
+\CVSection{Professional Development \& Training}
+\Entry{CTLS6203 --- Assessing Learning}{Centre for Teaching and Learning (CTL), Western University}{Apr.~2023--Jun.~2023}
+\vspace{2pt}
+\Entry{CTLS6202 --- Creating Effective Opportunities for Learning}{Centre for Teaching and Learning (CTL), Western University}{Jan.~2023--Mar.~2023}
+\vspace{2pt}
+\Entry{CTLS6201 --- Designing Responsive Curriculum}{Centre for Teaching and Learning (CTL), Western University}{Sep.~2022--Nov.~2022}
+\vspace{2pt}
+\Entry{Teaching Assistant Training Program}{Centre for Teaching and Learning (CTL), Western University}{Fall~2020}
+\vspace{2pt}
+\Entry{Java Programming Course}{CETTM MTNL, Mumbai, India}{Jun.~2016--Jul.~2016}
+\vspace{2pt}
+\Entry{Two-wheeled Vehicle Implementation Course}{SkillRex}{Sep.~2015}
+
+% =====================
+% Talks, Posters, Outreach
+% =====================
+% \CVSection{Invited Talks \& Presentations (selected)}
+% \begin{itemize}
+%   \item ``Talk title,'' Venue, City, Month Year.
+%   \item ``Poster title,'' Conference name, Month Year.
+% \end{itemize}
+
+% =====================
+% Service
+% =====================
+\CVSection{Professional Service}
+\begin{itemize}
+  \item IEEE Member.
+\end{itemize}
+
+% =====================
+% Skills
+% =====================
+\CVSection{Skills}
+\begin{itemize}
+  %\item \textbf{Research areas:} Autonomous robot navigation; Hybrid control; Obstacle avoidance; Multi-robot systems.
+  \item \textbf{Programming:} Python; \LaTeX.
+  \item \textbf{Software:} MATLAB \& Simulink; Gazebo; Visio.
+\end{itemize}
+
+\end{document}

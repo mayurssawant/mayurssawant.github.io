@@ -1,3 +1,6 @@
 site/
 __pycache__/
 .venv/
+.latex-aux/
+*.synctex.gz
+cv/*.pdf
