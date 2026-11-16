@@ -1,9 +1,23 @@
 <div class="hero">
-  <div class="eyebrow">MAYUR SANJAY SAWANT · ROBOTICS & CONTROL RESEARCHER</div>
-  <h1>Making autonomous motion <em>reliable.</em></h1>
-  <p class="hero-lead">I develop feedback control methods that help robots navigate around obstacles and move safely through constrained environments.</p>
-  <div class="hero-actions"><a class="button button-primary" href="projects/">Explore my research ↗</a><a class="button button-secondary" href="files/Mayur_Sawant_CV.pdf">View CV ↗</a></div>
-  <div class="hero-meta"><span>Postdoctoral Researcher</span><span>Lakehead University · Thunder Bay, Canada</span></div>
+  <div class="hero-copy">
+    <div class="eyebrow">MAYUR SANJAY SAWANT · ROBOTICS & CONTROL RESEARCHER</div>
+    <h1>Making autonomous motion <em>reliable.</em></h1>
+    <p class="hero-lead">I develop feedback control methods that help robots navigate around obstacles and move safely through constrained environments.</p>
+    <div class="hero-actions"><a class="button button-primary" href="projects/">Explore my research ↗</a><a class="button button-secondary" href="files/Mayur_Sawant_CV.pdf">View CV ↗</a></div>
+    <div class="hero-meta"><span>Postdoctoral Researcher</span><span>Lakehead University · Thunder Bay, Canada</span></div>
+  </div>
+  <div class="hero-showcase" aria-label="Featured experiment videos">
+    <span class="showcase-label">WATCH THE RESEARCH IN MOTION</span>
+    <a class="showcase-video" href="experiments/#turtlebot-4" aria-label="Watch the TurtleBot 4 experiment and view its paper">
+      <img src="https://i.ytimg.com/vi/kOQRXWgXRUM/hqdefault.jpg" alt="TurtleBot 4 navigation experiment video preview" loading="eager">
+      <span class="showcase-shade"></span><span class="showcase-play" aria-hidden="true">▶</span><span class="showcase-caption"><small>ROBOT EXPERIMENT · TURTLEBOT 4</small><strong>Autonomous navigation ↗</strong></span>
+    </a>
+    <a class="showcase-video" href="experiments/#qdrone-2" aria-label="Watch the QDrone 2 experiment and view its paper">
+      <img src="https://i.ytimg.com/vi/BhwDtWQv4gk/hqdefault.jpg" alt="Quanser QDrone 2 flight experiment video preview" loading="eager">
+      <span class="showcase-shade"></span><span class="showcase-play" aria-hidden="true">▶</span><span class="showcase-caption"><small>FLIGHT EXPERIMENT · QDRONE 2</small><strong>Dynamic obstacle avoidance ↗</strong></span>
+    </a>
+    <a class="showcase-more" href="experiments/">All experiments &amp; simulations <span aria-hidden="true">↗</span></a>
+  </div>
 </div>
 
 <div class="research-layout">

@@ -5,11 +5,11 @@ My journal articles and conference papers are listed below. I list each distinct
 ## Journal articles
 
 1. M. Sawant and A. Tayebi, “Constrained Stabilization on the n-Sphere with Conic and Star-shaped Constraints,” *IEEE Transactions on Automatic Control*, 2026. [Paper ↗](https://doi.org/10.1109/TAC.2026.3726870) · [Preprint ↗](https://arxiv.org/abs/2509.02487)
-2. M. Sawant and A. Tayebi, “From Kinematic Motion Planners to Dynamic Autonomous Navigation with Obstacle Avoidance,” submitted to *Automatica*. [Preprint ↗](https://arxiv.org/abs/2503.17589)
+2. M. Sawant and A. Tayebi, “From Kinematic Motion Planners to Dynamic Autonomous Navigation with Obstacle Avoidance,” submitted to *Automatica*. [Preprint ↗](https://arxiv.org/abs/2503.17589) · [QDrone experiment ↗](experiments.md#qdrone-2)
 3. M. Sawant and A. Tayebi, “Dynamic Stabilization on the n-sphere with Star-shaped Constraints,” submitted to *Automatica*. [Preprint ↗](https://arxiv.org/abs/2603.27382v3)
-4. M. Sawant, I. Polushin, and A. Tayebi, “N-dimensional Convex Obstacle Avoidance using Hybrid Feedback Control,” *IEEE Transactions on Automatic Control*, 2026. [Paper ↗](https://doi.org/10.1109/TAC.2026.3714304) · [Extended preprint ↗](https://arxiv.org/abs/2403.11279)
-5. M. Sawant, I. Polushin, and A. Tayebi, “Hybrid Feedback Control Design for Nonconvex Obstacle Avoidance,” *IEEE Transactions on Automatic Control*, vol. 69, no. 11, pp. 7508–7523, 2024. [Paper ↗](https://doi.org/10.1109/TAC.2024.3388952)
-6. M. Sawant, S. Berkane, I. Polushin, and A. Tayebi, “Hybrid Feedback for Autonomous Navigation in Planar Environments With Convex Obstacles,” *IEEE Transactions on Automatic Control*, vol. 68, no. 12, pp. 7342–7357, 2023. [Paper ↗](https://doi.org/10.1109/TAC.2023.3277884) · [Earlier preprint ↗](https://arxiv.org/abs/2111.09380)
+4. M. Sawant, I. Polushin, and A. Tayebi, “N-dimensional Convex Obstacle Avoidance using Hybrid Feedback Control,” *IEEE Transactions on Automatic Control*, 2026. [Paper ↗](https://doi.org/10.1109/TAC.2026.3714304) · [Extended preprint ↗](https://arxiv.org/abs/2403.11279) · [TurtleBot experiment ↗](experiments.md#turtlebot-4)
+5. M. Sawant, I. Polushin, and A. Tayebi, “Hybrid Feedback Control Design for Nonconvex Obstacle Avoidance,” *IEEE Transactions on Automatic Control*, vol. 69, no. 11, pp. 7508–7523, 2024. [Paper ↗](https://doi.org/10.1109/TAC.2024.3388952) · [Videos ↗](experiments.md#nonconvex-obstacle-navigation)
+6. M. Sawant, S. Berkane, I. Polushin, and A. Tayebi, “Hybrid Feedback for Autonomous Navigation in Planar Environments With Convex Obstacles,” *IEEE Transactions on Automatic Control*, vol. 68, no. 12, pp. 7342–7357, 2023. [Paper ↗](https://doi.org/10.1109/TAC.2023.3277884) · [Earlier preprint ↗](https://arxiv.org/abs/2111.09380) · [Videos ↗](experiments.md#convex-obstacle-navigation)
 7. D. Tiwari, M. A. A. Sheikh, J. Moyalan, M. Sawant, S. K. Solanki, and J. Solanki, “Vehicle-to-Grid Integration for Enhancement of Grid: A Distributed Resource Allocation Approach,” *IEEE Access*, vol. 8, pp. 175948–175957, 2020. [Paper ↗](https://doi.org/10.1109/ACCESS.2020.3025170)
 
 ## Conference proceedings

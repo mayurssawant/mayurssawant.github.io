@@ -22,6 +22,7 @@ nav:
   - Home: index.md
   - Research: projects.md
   - Publications: publications.md
+  - Experiments & Simulations: experiments.md
   - CV: files/Mayur_Sawant_CV.pdf
   - Thesis: files/Mayur_Sawant_PhD_Thesis.pdf
 extra_css:

@@ -6,13 +6,13 @@ I study how to make autonomous motion safe and reliable in environments with obs
 
 I design hybrid feedback controllers that guide robots toward a goal while avoiding obstacles. My research covers planar and three-dimensional environments, convex and nonconvex obstacles, and higher-dimensional spaces.
 
-**Selected papers:** [Planar convex obstacles (2023)](https://doi.org/10.1109/TAC.2023.3277884) · [Nonconvex obstacles (2024)](https://doi.org/10.1109/TAC.2024.3388952) · [Three-dimensional navigation (2025)](https://doi.org/10.23919/ACC63710.2025.11107930) · [N-dimensional convex obstacles (2026)](https://arxiv.org/abs/2403.11279)
+**Selected papers:** [Planar convex obstacles (2023)](https://doi.org/10.1109/TAC.2023.3277884) · [Nonconvex obstacles (2024)](https://doi.org/10.1109/TAC.2024.3388952) · [Three-dimensional navigation (2025)](https://doi.org/10.23919/ACC63710.2025.11107930) · [N-dimensional convex obstacles (2026)](https://arxiv.org/abs/2403.11279) · [Watch experiments & simulations](experiments.md)
 
 ## Dynamic navigation {#dynamic-navigation}
 
 Kinematic motion planners specify where a robot should move. My current work examines how to carry those planning ideas into systems with second-order dynamics, where velocity and acceleration affect the motion.
 
-**Selected papers:** [From Kinematic Motion Planners to Dynamic Autonomous Navigation with Obstacle Avoidance](https://arxiv.org/abs/2503.17589) · [Adapting First-order Motion Planners to Second-order Dynamical Systems](publications.md#conference-proceedings)
+**Selected papers:** [From Kinematic Motion Planners to Dynamic Autonomous Navigation with Obstacle Avoidance](https://arxiv.org/abs/2503.17589) · [Adapting First-order Motion Planners to Second-order Dynamical Systems](publications.md#conference-proceedings) · [Watch the QDrone experiment](experiments.md#qdrone-2)
 
 ## Constrained stabilization {#constrained-stabilization}
 
