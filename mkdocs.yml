@@ -26,7 +26,7 @@ nav:
   - CV: files/Mayur_Sawant_CV.pdf
   - Thesis: files/Mayur_Sawant_PhD_Thesis.pdf
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/site-20261116.css
 extra:
   social:
     - icon: fontawesome/brands/google-scholar
